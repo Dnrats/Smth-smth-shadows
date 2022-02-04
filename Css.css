@@ -102,8 +102,33 @@ main {
     align-items: center;
 }
 .center1 {
-    border: 1px solid black;
-    box-shadow: 10px 10px 10px black;
+    background: linear-gradient(145deg, #fbfdff, #d4d4d8);
+    box-shadow:  10px 10px 25px #a2a3a6,
+                 -10px -10px 25px #ffffff;
+                 width: 18vw;
+                 height: 4vw;
+                 border-radius: 10px;
+                 display: flex;    
+}
+.center1 [type=radio]{
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+.center1 [type=radio]+label{
+    width: 4.5vw;
+    height: 4vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    color: #8c8d92;
+    cursor: pointer;
+}
+.center1 [type=radio]:checked + label{
+    background: linear-gradient(180deg, #6D7382 20%, #929AAE 80%);
+    color: #EBECF0;
 }
 .AD1450 {
     display: flex;
